@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="廖文东 Lief 的个人简历与作品集。AI Agent 工程师 · 3 年 AI 应用经验 · Python 起步 · 深圳。展示多 Agent 编排、RAG 和企业 AI 应用。">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f8f7f3">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#17191f">
+  <title>廖文东 Lief｜AI Agent 工程师 · 深圳</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Lief，回到首页"><span class="mark" aria-hidden="true"></span>Lief<span class="brand-period">.</span></a>
+      <div class="header-actions"><a href="#section-nav">目录</a><button class="button print-button" type="button" id="print-resume">打印 / 导出 PDF</button></div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span>求职方向 · 深圳</p>
+          <h1 id="hero-title">廖文东 <span>Lief</span></h1>
+          <p class="position">AI Agent 工程师 · 3 年 AI 应用经验 · Python 起步 · 深圳</p>
+          <p class="introduction">用 Python 和 FastAPI 做过多模型服务，带跨境零售团队的多 Agent 中台从需求走到生产。<br class="desktop-break">我负责梳理业务约束、编排流程和验收关键结果。</p>
+          <div class="actions">
+            <a class="button primary" href="#projects">看作品 <span aria-hidden="true">↓</span></a>
+            <a class="button secondary" href="#contact">联系我 <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-labelledby="featured-title">
+          <p class="panel-top"><span class="panel-dot" aria-hidden="true"></span>本页主推</p>
+          <h2 id="featured-title"><a href="https://github.com/LIAlia111/familiar" target="_blank" rel="noopener">claude-familiar <span aria-hidden="true">↗</span></a></h2>
+          <p class="featured-summary">住在 Claude Code 状态栏的像素宠物，会随会话互动。</p>
+          <div class="featured-scale"><p><strong>7</strong> 个 npm 版本 · 累计下载 <strong>1,475</strong> 次</p><small>npm 官方统计截至 2026-11-22<br>页面数据截至 2026-11-22</small></div>
+          <a class="featured-link" href="https://github.com/LIAlia111/familiar" target="_blank" rel="noopener">查看 GitHub 源码与安装说明 <span aria-hidden="true">↗</span></a>
+        </aside>
+      </div>
+      <nav class="section-nav" id="section-nav" aria-label="简历章节">
+        <ol><li><a href="#profile"><span>01</span> 职业概述</a></li><li><a href="#capabilities"><span>02</span> 核心能力</a></li><li><a href="#experience"><span>03</span> 工作经历</a></li><li><a href="#projects"><span>04</span> 项目经历</a></li><li><a href="#method"><span>05</span> 我的方法论</a></li><li><a href="#more"><span>06</span> 开源与作品</a></li><li><a href="#skills"><span>07</span> 专业技能</a></li><li><a href="#education"><span>08</span> 教育背景</a></li><li><a href="#contact"><span>09</span> 联系方式</a></li><li><a href="#faq"><span>10</span> 常见问题</a></li></ol>
+      </nav>
+    </section>
+
+    <section id="profile" class="wrap section" aria-labelledby="profile-title">
+      <header class="section-head"><h2 id="profile-title"><span class="section-number" aria-hidden="true">01</span>职业概述</h2></header>
+      <p class="profile-text">我从 Python / FastAPI 起步，先做多模型调用、知识库和生成式图像工作流，再主导跨境零售 AI Agent 中台落地。熟悉 LangGraph 编排、MCP 工具封装、RAG 与分层记忆，做过企业知识库、多 Agent 研究和 AI 工具产品。日常用 Claude Code 与 Codex 做规格驱动开发，并通过接口测试、代码审查和人工确认验收。</p>
+    </section>
+
+    <section id="capabilities" class="wrap section" aria-labelledby="capabilities-title">
+      <header class="section-head"><h2 id="capabilities-title"><span class="section-number" aria-hidden="true">02</span>核心能力</h2></header>
+      <div class="capability-grid">
+        <article><h3>业务需求与规格</h3><p>先定数据权限、接口和验收条件，再把文档上传、检索与问答拆成可联调的任务。</p><a href="#askbase">AskBase <span aria-hidden="true">↗</span></a></article>
+        <article><h3>多 Agent 编排</h3><p>用 Orchestrator 按意图和复杂度调度任务，LangGraph 管理状态、重试和回跳。</p><a href="#retail">跨境零售 AI Agent 中台 <span aria-hidden="true">↗</span></a></article>
+        <article><h3>RAG 与分层记忆</h3><p>把向量和关键词检索融合重排，回答附来源引用。用上下文压缩和分层记忆衔接长任务。</p><a href="#retail">中台 RAG <span aria-hidden="true">↗</span></a></article>
+        <article><h3>MCP 工具接入</h3><p>统一工具参数和返回结构，接入词库检索、合规校验与业务 API。</p><a href="#retail">中台工具层 <span aria-hidden="true">↗</span></a></article>
+        <article><h3>评测与人工确认</h3><p>规则校验结合 LLM-as-Judge，跟踪失败案例。退款、批量导出等高风险操作经人工确认。</p><a href="#retail">中台评测 <span aria-hidden="true">↗</span></a></article>
+        <article><h3>服务部署与交接</h3><p>用 Python、FastAPI 和 Celery 做服务，配合 Redis、PostgreSQL 与 Docker，保留任务日志和监控。</p><a href="#experience">工作经历 <span aria-hidden="true">↗</span></a></article>
+      </div>
+    </section>
+
+    <section id="experience" class="wrap section" aria-labelledby="experience-title">
+      <header class="section-head"><h2 id="experience-title"><span class="section-number" aria-hidden="true">03</span>工作经历</h2></header>
+      <ol class="milestones" aria-label="职业阶段时间轴">
+        <li><a href="#study-stage"><time datetime="2021">2021</time><span>大专</span></a></li>
+        <li><a href="#qingshang"><time datetime="2023-12">2023.12</time><span>轻上</span></a></li>
+        <li><a href="#pansheng"><time datetime="2024-11">2024.11</time><span>攀升</span></a></li>
+        <li><a href="#independent"><time datetime="2026">2026</time><span>独立项目</span></a></li>
+      </ol>
+      <ol class="timeline">
+        <li id="study-stage"><p class="date">2021.09 – 2024.06</p><div><h3>广东南华工商职业学院</h3><p>学习商务数据分析与应用，担任班长并联合创办摄影社团。</p></div></li>
+        <li id="qingshang"><p class="date">2023.12 – 2024.10</p><div><h3>广州市轻上科技有限公司</h3><p class="role">AI 应用工程师</p><p>用 Python 做多模型统一调用、限流、用量记录、熔断与降级，接入 Celery / Redis 批量推理。搭建 Dify RAG 文档处理流程，负责电商 LoRA 微调与 A/B 评估，将 ComfyUI 图像工作流封装为异步批量服务。</p></div></li>
+        <li id="pansheng"><p class="date">2024.11 – 2026.10</p><div><h3>广州攀升协手科技有限公司</h3><p class="role">AI Agent 工程师</p><p>负责跨境零售 AI Agent 中台落地，以 Orchestrator 和 LangGraph 统一选品、Listing、客服、素材和运营日报。搭建混合检索、引用溯源和飞书知识同步，隔离部门知识库权限。封装 MCP 工具，加入规则校验、模型评测、人工确认、监控告警与 Docker 私有化部署。</p></div></li>
+        <li id="independent"><p class="date">2026 年起</p><div><h3>独立项目与开源</h3><p>迭代 JARVIS 与贾维斯指挥台，做多 Agent 市场研究演示和 AI 成本账，发布 claude-familiar。</p></div></li>
+      </ol>
+    </section>
+
+    <section id="projects" class="wrap section" aria-labelledby="projects-title">
+      <header class="section-head"><h2 id="projects-title"><span class="section-number" aria-hidden="true">04</span>项目经历</h2></header>
+      <div class="project-filters" role="group" aria-label="按类别筛选项目">
+        <button class="button" type="button" data-filter="all" aria-pressed="true" aria-controls="project-grid">全部</button>
+        <button class="button" type="button" data-filter="work" aria-pressed="false" aria-controls="project-grid">工作项目</button>
+        <button class="button" type="button" data-filter="personal" aria-pressed="false" aria-controls="project-grid">个人项目</button>
+      </div>
+      <p class="visually-hidden" id="project-status" role="status"></p>
+      <div class="project-grid" id="project-grid">
+        <article class="project" id="retail" data-category="work">
+          <img class="project-cover" src="assets/arch-retail.svg" alt="" loading="lazy">
+          <div class="project-body">
+            <h3><button class="project-open" type="button" aria-haspopup="dialog" aria-controls="project-dialog">跨境零售 AI Agent 中台<span aria-hidden="true">↗</span></button></h3>
+            <p class="project-subtitle">统一选品、商品上新、客服、素材与运营日报的 AI 能力</p>
+            <p class="project-role">工作项目 · AI Agent 工程师（核心开发）</p>
+            <dl class="project-stats">
+              <div><dt>个内部业务 Agent</dt><dd>5</dd></div>
+              <div><dt>层知识源</dt><dd>3</dd></div>
+              <div><dt>类工具链能力</dt><dd>4</dd></div>
+            </dl>
+            <ul class="tags" aria-label="技术标签"><li>FastAPI</li><li>LangGraph</li><li>RAG</li><li>MCP</li><li>Qdrant</li></ul>
+          </div>
+        </article>
+        <article class="project" id="jarvis" data-category="personal">
+          <img class="project-cover" src="assets/cover-jarvis.svg" alt="" loading="lazy">
+          <div class="project-body">
+            <h3><button class="project-open" type="button" aria-haspopup="dialog" aria-controls="project-dialog">JARVIS 多智能体编排与治理平台<span aria-hidden="true">↗</span></button></h3>
+            <p class="project-subtitle">跨会话记忆、任务编排、执行治理与贾维斯指挥台</p>
+            <p class="project-role">个人项目 · 2026.01 至今</p>
+            <dl class="project-stats">
+              <div><dt>服务端 Hook 文件</dt><dd>53</dd></div>
+              <div><dt>服务端 Skill 目录</dt><dd>88</dd></div>
+              <div><dt>服务端定时脚本</dt><dd>21</dd></div>
+            </dl>
+            <ul class="tags" aria-label="技术标签"><li>Hook</li><li>Skill</li><li>MCP</li><li>Qdrant</li></ul>
+          </div>
+        </article>
+        <article class="project" id="askbase" data-category="personal">
+          <img class="project-cover" src="assets/cover-askbase.svg" alt="" loading="lazy">
+          <div class="project-body">
+            <h3><button class="project-open" type="button" aria-haspopup="dialog" aria-controls="project-dialog">AskBase 企业知识库 SaaS<span aria-hidden="true">↗</span></button></h3>
+            <p class="project-subtitle">对标 CustomGPT：上传文档即得可溯源的企业 AI 助手</p>
+            <p class="project-role">个人项目 · 独立全栈 · 约 3 周做到可收费</p>
+            <dl class="project-stats">
+              <div><dt>API 端点</dt><dd>47</dd></div>
+              <div><dt>前端页面</dt><dd>43</dd></div>
+              <div><dt>Git 提交</dt><dd>272</dd></div>
+            </dl>
+            <ul class="tags" aria-label="技术标签"><li>FastAPI</li><li>Next.js</li><li>Qdrant</li><li>BGE-M3</li><li>混合检索</li><li>支付</li></ul>
+          </div>
+        </article>
+        <article class="project" id="market" data-category="personal">
+          <img class="project-cover" src="assets/market-workflow.png" alt="Market Intel 并行研究流程示意图" loading="lazy">
+          <div class="project-body">
+            <h3><button class="project-open" type="button" aria-haspopup="dialog" aria-controls="project-dialog">Market Intel 多 Agent 市场研究<span aria-hidden="true">↗</span></button></h3>
+            <p class="project-subtitle">多源竞品研究与实时进度反馈</p>
+            <p class="project-role">个人项目 · 2026.05</p>
+            <dl class="project-stats">
+              <div><dt>规划角色</dt><dd>1</dd></div>
+              <div><dt>并行研究角色</dt><dd>3</dd></div>
+              <div><dt>汇总角色</dt><dd>1</dd></div>
+            </dl>
+            <ul class="tags" aria-label="技术标签"><li>LangGraph</li><li>FastAPI</li><li>SSE</li><li>Tavily</li></ul>
+          </div>
+        </article>
+        <article class="project" id="cost" data-category="personal">
+          <img class="project-cover" src="assets/arch-ai-cost.svg" alt="" loading="lazy">
+          <div class="project-body">
+            <h3><button class="project-open" type="button" aria-haspopup="dialog" aria-controls="project-dialog">AI 成本账<span aria-hidden="true">↗</span></button></h3>
+            <p class="project-subtitle">比较全球 AI 模型按量与订阅价格，按使用量估算月成本</p>
+            <p class="project-role">个人项目 · 2026.10 至今 · 在线可用</p>
+            <ul class="tags" aria-label="技术标签"><li>LiteLLM</li><li>OpenRouter</li><li>GitHub Actions</li><li>Cloudflare Pages</li></ul>
+          </div>
+        </article>
+      </div>
+      <button class="button secondary project-more" id="project-more" type="button" aria-expanded="false" aria-controls="project-grid" hidden>展开更多</button>
+      <section class="resume-projects" aria-labelledby="resume-projects-title">
+        <h3 id="resume-projects-title">简历项目摘要</h3>
+        <div class="resume-project-grid">
+          <article>
+            <h4><a href="#retail">跨境零售 AI Agent 中台</a></h4>
+            <dl class="case-notes">
+              <div><dt>背景</dt><dd>不同业务各自接模型、维护知识，复合任务难编排。</dd></div>
+              <div><dt>实现</dt><dd>用 Orchestrator 与 LangGraph 编排选品、Listing、客服、素材和日报，接入混合检索、MCP 与评测。</dd></div>
+              <div><dt>成果</dt><dd>统一业务入口、知识引用、部门权限和高风险操作确认。</dd></div>
+            </dl>
+          </article>
+          <article>
+            <h4><a href="#jarvis">JARVIS 多智能体编排与治理平台</a></h4>
+            <dl class="case-notes">
+              <div><dt>背景</dt><dd>多步骤任务分散，跨会话信息容易丢失。</dd></div>
+              <div><dt>实现</dt><dd>通过 Hook 召回记忆和拦截高风险操作，用 Skill、MCP 与子代理执行。</dd></div>
+              <div><dt>成果</dt><dd>支撑视频与论文交付。贾维斯指挥台用 Electron 集中管理 CLI 会话，仍在开发。</dd></div>
+            </dl>
+          </article>
+          <article>
+            <h4><a href="#askbase">AskBase 企业知识库 SaaS</a></h4>
+            <dl class="case-notes">
+              <div><dt>背景</dt><dd>企业问答需要回查原文，也要隔离组织数据。</dd></div>
+              <div><dt>实现</dt><dd>文档分块入库，混合检索后由 Claude 流式答复并附引用，JWT 校验访问权限。</dd></div>
+              <div><dt>成果</dt><dd>约 3 周从 0 做到可收费的完整 SaaS：10 个后端模块、47 个 API、43 个页面、272 次提交。</dd></div>
+            </dl>
+          </article>
+          <article>
+            <h4><a href="#market">Market Intel 多 Agent 市场研究</a></h4>
+            <dl class="case-notes">
+              <div><dt>背景</dt><dd>多源研究需要规划、并行检索与进度反馈。</dd></div>
+              <div><dt>实现</dt><dd>LangGraph 调度研究角色，Tavily 检索，FastAPI SSE 推送进度，支持自带模型密钥。</dd></div>
+              <div><dt>成果</dt><dd>作为 JARVIS 的公开演示场景上线。</dd></div>
+            </dl>
+          </article>
+          <article>
+            <h4><a href="#cost">AI 成本账</a></h4>
+            <dl class="case-notes">
+              <div><dt>背景</dt><dd>不同平台的订阅和按量价格难以直接比较。</dd></div>
+              <div><dt>实现</dt><dd>汇总 LiteLLM / OpenRouter 价格并人工核对订阅，GitHub Actions 每日更新静态 JSON API。</dd></div>
+              <div><dt>成果</dt><dd><a href="https://cost.aicorecola.com" target="_blank" rel="noopener">打开在线工具</a>，支持月成本估算和 3D 城市视图。</dd></div>
+            </dl>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <section id="method" class="wrap section" aria-labelledby="method-title">
+      <header class="section-head"><h2 id="method-title"><span class="section-number" aria-hidden="true">05</span>我的方法论</h2></header>
+      <ol class="flow" aria-label="AI Native 协作流程">
+        <li><strong>明确约束</strong><span>定数据权限与风险边界</span></li>
+        <li><strong>写规格</strong><span>列输入、输出和通过条件</span></li>
+        <li><strong>分阶段实现</strong><span>按模块拆任务并联调</span></li>
+        <li><strong>测试与评测</strong><span>跑接口测试，审关键代码</span></li>
+        <li><strong>回流失败案例</strong><span>更新规则和评测样例</span></li>
+      </ol>
+      <div class="method-notes">
+        <article><h3>先定接口和验收</h3><p>用规格写明输入、输出、权限和失败行为，拆阶段交给 Claude Code 与 Codex 实现，再逐项联调。</p><a href="https://github.com/LIAlia111/lief-ai-standards">查看编码规范 <span aria-hidden="true">↗</span></a></article>
+        <article><h3>按任务复杂度路由</h3><p>简单意图直达工具，中等任务由 ReAct 处理，跨模块任务由 LangGraph 管理状态、重试和回跳。</p><a href="#retail">查看中台架构 <span aria-hidden="true">↗</span></a></article>
+        <article><h3>跟踪失败样例</h3><p>用规则校验结构和合规要求，再用 LLM-as-Judge 检查内容。失败样例回流改规则和补测。</p><a href="#retail">查看中台评测 <span aria-hidden="true">↗</span></a></article>
+        <article><h3>操作前确认，交付后核对</h3><p>高风险操作由 Hook 或业务流程暂停确认。上传成果逐条检查目标系统回执与页面。</p><a href="assets/papers-evidence.txt">查看验收摘录 <span aria-hidden="true">↗</span></a></article>
+      </div>
+    </section>
+
+    <section id="more" class="wrap section" aria-labelledby="more-title">
+      <header class="section-head"><h2 id="more-title"><span class="section-number" aria-hidden="true">06</span>开源与作品</h2></header>
+      <div class="demo-grid">
+        <a class="demo" id="familiar" href="https://github.com/LIAlia111/familiar" target="_blank" rel="noopener"><div class="demo-body"><span class="demo-kind">开源</span><h3>claude-familiar</h3><p>Claude Code 状态栏 AI 宠物：任何终端都能跑、复用已登录的 Claude Code 零额外 API 成本、会读 CLAUDE.md 认识你的项目。7 个版本，npm 累计下载 1,475 次。</p><span class="demo-action">浏览 GitHub <span aria-hidden="true">↗</span></span></div></a>
+        <a class="demo" id="agent-flow-visualizer" href="https://github.com/LIAlia111/agent-flow-visualizer" target="_blank" rel="noopener"><div class="demo-body"><span class="demo-kind">开源</span><h3>agent-flow-visualizer</h3><p>用 SVG 和 Canvas 在浏览器里交互查看 Agent 工作流。</p><span class="demo-action">浏览 GitHub <span aria-hidden="true">↗</span></span></div></a>
+        <a class="demo" id="lief-ai-standards" href="https://github.com/LIAlia111/lief-ai-standards" target="_blank" rel="noopener"><div class="demo-body"><span class="demo-kind">开源</span><h3>lief-ai-standards</h3><p>AI 编码规范库，包含 AGENTS.md、CLAUDE.md 模板与提示词。</p><span class="demo-action">浏览 GitHub <span aria-hidden="true">↗</span></span></div></a>
+        <a class="demo demo-image" id="video" href="assets/arch-video.svg"><div class="demo-thumb"><img src="assets/ai-video.jpg" loading="lazy" width="1280" height="720" alt="《子代理》成片静帧"></div><div class="demo-body"><span class="demo-kind">流程图</span><h3>AI 知识视频流水线</h3><p>从选题核查到文案、渲染、三路评审和发布包，归档 54 期正式成片。</p><span class="demo-action">查看流水线 <span aria-hidden="true">↗</span></span></div></a>
+        <a class="demo" id="papers" href="assets/arch-papers.svg"><div class="demo-body"><span class="demo-kind">流程图</span><h3>论文知识库</h3><p>将首批 11 篇论文整理为通俗解读和 CLI 实操手册，再合并入飞书。</p><span class="demo-action">查看入库流程 <span aria-hidden="true">↗</span></span></div></a>
+        <a class="demo" id="gallery" href="assets/arch-gallery.svg"><div class="demo-body"><span class="demo-kind">流程图</span><h3>飞书图库 Agent</h3><p>按风格与配色查图，多模态重排和去重后在飞书回图。</p><span class="demo-action">查看检索流程 <span aria-hidden="true">↗</span></span></div></a>
+        <a class="demo" id="bitcoin-war" href="https://war.aicorecola.com" target="_blank" rel="noopener"><div class="demo-body"><span class="demo-kind">在线</span><h3>比特币攻城战</h3><p>浏览器游戏作品。</p><span class="demo-action">打开作品 <span aria-hidden="true">↗</span></span></div></a>
+      </div>
+    </section>
+
+    <section id="skills" class="wrap section" aria-labelledby="skills-title">
+      <header class="section-head"><h2 id="skills-title"><span class="section-number" aria-hidden="true">07</span>专业技能</h2></header>
+      <div class="skills-grid">
+        <article><h3>Agent 工程与知识检索</h3><ul><li>LangGraph、LangChain、Orchestrator、Supervisor–Worker、ReAct、Function Calling、MCP <a href="#retail">跨境零售 AI Agent 中台</a></li><li>Qdrant、Milvus、LlamaIndex、混合检索、重排、引用溯源 <a href="#askbase">AskBase</a></li><li>上下文压缩、分层持久记忆 <a href="#jarvis">JARVIS</a></li></ul></article>
+        <article><h3>评估与服务开发</h3><ul><li>LLM-as-Judge、规则校验、高风险操作拦截、任务日志、监控告警 <a href="#retail">中台评测</a></li><li>Python、FastAPI、Celery、Redis、PostgreSQL、Docker <a href="#experience">工作经历</a></li><li>TypeScript、Next.js <a href="#askbase">AskBase</a></li></ul></article>
+        <article><h3>AI 工具与交付</h3><ul><li>Claude Code、Codex、Spec Kit、Hook、Skill、子代理 <a href="#jarvis">JARVIS</a></li><li>Dify、ComfyUI、LoRA <a href="#qingshang">轻上经历</a></li></ul></article>
+      </div>
+    </section>
+
+    <section id="education" class="wrap section" aria-labelledby="education-title">
+      <header class="section-head"><h2 id="education-title"><span class="section-number" aria-hidden="true">08</span>教育背景</h2></header>
+      <div class="education"><p class="date">2021.09 – 2024.06</p><div><h3>广东南华工商职业学院</h3><p>商务数据分析与应用 · 大专 · 班长、联合创办摄影社团</p></div></div>
+    </section>
+
+    <section id="contact" class="wrap section contact" aria-labelledby="contact-title">
+      <header class="section-head"><h2 id="contact-title"><span class="section-number" aria-hidden="true">09</span>联系方式</h2></header>
+      <div class="contact-links"><a href="mailto:wendongliao76@gmail.com">wendongliao76@gmail.com <span aria-hidden="true">↗</span></a><a href="https://github.com/LIAlia111" target="_blank" rel="noopener">GitHub · LIAlia111 <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section id="faq" class="wrap section" aria-labelledby="faq-title">
+      <header class="section-head"><h2 id="faq-title"><span class="section-number" aria-hidden="true">10</span>常见问题</h2></header>
+      <div class="faq-list">
+        <details open><summary>没有科班计算机背景，代码是谁写的？</summary><p>项目代码主要由 Claude Code 和 Codex 根据规格生成。我负责拆需求、定数据流和接口、审查改动、跑验收，并能讲清各模块的输入、输出和失败时的行为。</p></details>
+        <details><summary>怎么判断 AI 写的实现能交付？</summary><p>把关键路径和失败场景写成接口测试样例，审查关键代码。对生成内容先做规则校验，再用 LLM-as-Judge 检查。退款或批量导出留给人工确认。</p></details>
+        <details><summary>最值得现场演示的项目是哪个？</summary><p>我会演示 claude-familiar 的安装和 Hook 事件如何改变状态栏，也可以打开 AI 成本账，演示如何比较按量价和订阅价。</p></details>
+        <details><summary>能为企业团队做什么？</summary><p>我可以把分散的业务工具接入 Agent 中台，按任务复杂度调度，提供有引用的知识问答，并把权限、评测和运行监控纳入上线流程。</p></details>
+        <details><summary>怎样减少 RAG 回答出错？</summary><p>先过滤用户无权访问的知识源，再用向量和关键词并行召回、融合重排。检查答案是否能回到原文，失败样例用于补充检索和评测。</p></details>
+      </div>
+    </section>
+  </main>
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title">
+    <div class="project-dialog-header">
+      <h2 id="project-dialog-title"></h2>
+      <button class="button secondary" id="project-close" type="button" autofocus>关闭 <span aria-hidden="true">×</span></button>
+    </div>
+    <div class="project-dialog-body"></div>
+  </dialog>
+  <template id="detail-retail">
+    <section><h3>项目背景</h3><p>跨境零售团队分别接入选品、上新、客服、素材和日报工具，复合任务难编排，知识也各自存放。中台提供统一入口、任务调度与共享知识源。</p></section>
+    <section>
+      <h3>总体架构链路</h3>
+      <p class="architecture-chain"><span>Web / API（FastAPI）</span> <span class="flow-arrow" aria-hidden="true">→</span> <span>Orchestrator 分级调度（直路由 / ReAct / 多 Agent）</span> <span class="flow-arrow" aria-hidden="true">→</span> <span>LangGraph（意图、规划、路由、执行、汇总、校验）</span> <span class="flow-arrow" aria-hidden="true">→</span> <span>业务 Agent</span> <span class="flow-arrow" aria-hidden="true">→</span> <span>RAG / 记忆 / 生图 / MCP</span> <span class="flow-arrow" aria-hidden="true">→</span> <span>PostgreSQL + Redis + Qdrant</span></p>
+      <img class="architecture" src="assets/arch-retail.svg" alt="跨境零售 AI Agent 中台的调度、业务 Agent、工具与存储架构" width="464" height="232">
+      <p>简单请求直路由，中等任务交给 ReAct，复杂任务编排多个 Agent。工作流保留执行状态，允许失败重试和回跳。</p>
+    </section>
+    <section>
+      <h3>内部业务 Agent</h3>
+      <p><strong>选品与需求预测</strong> · Apify 采集 Amazon BSR 和竞品，Prophet / XGBoost 预测需求，Claude 生成选品报告。置信度不足回跳补抓，Celery 每日刷新品类数据。</p>
+      <p><strong>Listing 优化</strong> · 关键词挖掘、竞品分析、英文文案与 SEO 合规评分分工处理，Hook 支持中断重试和自动复盘。</p>
+      <p><strong>多语言客服</strong> · 识别意图，订单查询调用 Shopify Admin API，投诉或强烈负面情绪转人工。FastAPI WebSocket 回传消息，Celery worker 按需扩容。</p>
+      <p><strong>商品素材检索与生图</strong> · Qdrant 支持文搜图、图搜图和图文混检。解析参考图的风格参数生成 Prompt，用 ComfyUI 批量产出商品素材。</p>
+      <p><strong>评价售后与运营日报</strong> · 获取数据、分类、生成内容，再经人工审核输出。退款、赔付和投诉保留人工确认。</p>
+    </section>
+    <section>
+      <h3>RAG 与知识源</h3>
+      <p class="architecture-chain"><span>查询改写</span> <span class="flow-arrow" aria-hidden="true">→</span> <span>向量检索 + 关键词检索</span> <span class="flow-arrow" aria-hidden="true">→</span> <span>融合排序</span> <span class="flow-arrow" aria-hidden="true">→</span> <span>重排</span> <span class="flow-arrow" aria-hidden="true">→</span> <span>LLM 生成并附引用</span></p>
+      <img class="architecture" src="assets/arch-hybrid-rag.svg" alt="Hybrid RAG 双路检索、融合重排与引用生成流程" width="432" height="176">
+      <p>知识分为平台合规与行业关键词库、产品文档与客服话术、部门知识库。支持 PDF、Word、Excel 和 Markdown，接入飞书同步，按部门隔离权限。</p>
+    </section>
+    <section><h3>多模型、MCP 与评测</h3><p>对话、推理、视觉分开选型，异常时熔断和降级。工具链包括 RAG、记忆、生图和 MCP，词库检索、跨境合规校验等 Skill 统一入参与返回结构。规则与 LLM-as-Judge 检查文案准确性与违规项，失败样例回流改规则。用 Docker Compose 部署，保留任务日志与监控告警。</p></section>
+    <p class="project-evidence"><strong>架构图</strong><a href="assets/arch-retail.svg" target="_blank" rel="noopener">中台架构 <span aria-hidden="true">↗</span></a><a href="assets/arch-hybrid-rag.svg" target="_blank" rel="noopener">Hybrid RAG <span aria-hidden="true">↗</span></a></p>
+  </template>
+  <template id="detail-jarvis">
+    <section><h3>项目背景</h3><p>多步骤任务调度分散，跨会话信息容易丢失，危险操作和定时作业需要统一管控。</p></section>
+    <section>
+      <h3>总体架构</h3>
+      <p class="architecture-chain"><span>协作入口（Claude Code / Codex / Grok）</span> <span class="flow-arrow" aria-hidden="true">→</span> <span>Hook（提交前召回 · 危险操作确认）</span> <span class="flow-arrow" aria-hidden="true">→</span> <span>任务执行（Skill / MCP / 子代理）</span> <span class="flow-arrow" aria-hidden="true">→</span> <span>记忆（Qdrant 混合检索 · 时序知识图谱 · 本地文件）</span> <span class="flow-arrow" aria-hidden="true">→</span> <span>定时任务（服务器 cron）</span></p>
+      <img class="architecture" src="assets/arch-jarvis.svg" alt="JARVIS架构图，节点顺序见上方流程" width="344" height="234">
+    </section>
+    <section><h3>关键模块</h3><p>Hook 在提示词提交时召回相关背景，在高危操作执行前要求确认。Skill 复用操作流程，MCP 接入工具，子代理分工处理任务。服务端用 Qdrant 混合检索和时序知识图谱，本地用文件记忆。Claude 定规格与验收，Codex 批量执行。</p></section>
+    <section><h3>质量与测试</h3><p>执行后触发 LLM-as-Judge 评估，失败案例经根因分析写成防御规则。卡片的 Hook、Skill 和定时脚本数来自历史服务器备份的顶层统计。</p></section>
+    <section><h3>项目价值</h3><p>支撑 AI 知识视频和论文知识库的批量交付。延伸作品「贾维斯指挥台」正在开发，用 Electron 将 Claude Code、Codex 与 Grok 放进同一窗口并排对话、按目录分派任务、查看 Git 变更与验收结果。</p></section>
+    <p class="project-evidence"><strong>证据</strong><a href="assets/jarvis-evidence.txt" target="_blank" rel="noopener">架构与交接摘录 <span aria-hidden="true">↗</span></a><a href="assets/arch-jarvis.svg" target="_blank" rel="noopener">架构示意图 <span aria-hidden="true">↗</span></a></p>
+  </template>
+  <template id="detail-askbase">
+    <section><h3>项目背景</h3><p>企业想用自有文档搭 AI 助手，却卡在幻觉、搭建门槛、私有数据外泄和合规上。AskBase 对标 CustomGPT.ai：上传文档 → 自动建库 → 对话问答 → 每句回答都能点回原文。</p></section>
+    <section>
+      <h3>总体架构</h3>
+      <p class="architecture-chain"><span>上传文档（JWT 鉴权 · 知识库隔离）</span> <span class="flow-arrow" aria-hidden="true">→</span> <span>MinerU / Docling 解析分块</span> <span class="flow-arrow" aria-hidden="true">→</span> <span>BGE-M3 向量化入 Qdrant</span> <span class="flow-arrow" aria-hidden="true">→</span> <span>BM25 + 向量混合检索 · BGE 重排</span> <span class="flow-arrow" aria-hidden="true">→</span> <span>Claude 流式回答（SSE · 附来源引用）</span></p>
+      <img class="architecture" src="assets/arch-askbase.svg" alt="AskBase架构图，节点顺序见上方流程" width="344" height="234">
+    </section>
+    <section><h3>关键模块</h3><p>完整 SaaS 闭环：Google OAuth 与邮箱验证码登录、知识库与文档管理、对话、数据分析、第三方数据连接器、Lemon Squeezy 卡支付订阅；多企业数据隔离；语音提问（Paraformer ASR）。FastAPI + PostgreSQL + Next.js。</p></section>
+    <section><h3>质量与安全</h3><p>先写技术规格再分阶段开发，每阶段接口测试验收；自查并修复 OAuth CSRF、验证码 HMAC、SSRF 防护、密钥强制校验、接口限流等 P0 / P1 问题；CI 推送 dev 分支自动部署。</p></section>
+    <section><h3>项目价值</h3><p>2026-06-14 首次提交，07-02 自动部署上线 dev 环境：约 3 周从 0 做到可收费的完整 SaaS，共 10 个后端模块、47 个 API、43 个前端页面、272 次提交（数字取自本地仓库）。</p></section>
+    <p class="project-evidence"><strong>证据</strong><a href="assets/askbase-evidence.txt" target="_blank" rel="noopener">设计与源码摘录 <span aria-hidden="true">↗</span></a><a href="assets/arch-askbase.svg" target="_blank" rel="noopener">架构示意图 <span aria-hidden="true">↗</span></a></p>
+  </template>
+  <template id="detail-market">
+    <section><h3>项目背景</h3><p>多源市场研究需要拆任务、并行检索和综合发现，等待时还要知道任务进行到哪一步。</p></section>
+    <section>
+      <h3>总体架构</h3>
+      <p class="architecture-chain"><span>市场 / 竞品问题</span> <span class="flow-arrow" aria-hidden="true">→</span> <span>规划角色（拆分研究任务）</span> <span class="flow-arrow" aria-hidden="true">→</span> <span>并行研究（LangGraph · Tavily）</span> <span class="flow-arrow" aria-hidden="true">→</span> <span>汇总角色（合并研究发现）</span> <span class="flow-arrow" aria-hidden="true">→</span> <span>前端展示（FastAPI SSE 回传进度）</span></p>
+      <img class="architecture" src="assets/arch-market.svg" alt="Market Intel Agent架构图，节点顺序见上方流程" width="344" height="234">
+    </section>
+    <section><h3>关键模块</h3><p>LangGraph 调度规划、并行研究与汇总，Tavily 检索资料。FastAPI SSE 回传进度事件，支持自带模型密钥（BYOK）切换模型。</p></section>
+    <section><h3>质量与测试</h3><p>历史档案记下演示与部署，流程图可回查计划、并发研究、汇总与进度回传。</p></section>
+    <section><h3>项目价值</h3><p>作为 JARVIS 的公开演示场景上线，保留历史流程图和工作流摘录。</p></section>
+    <p class="project-evidence"><strong>证据</strong><a href="assets/market-workflow.png" target="_blank" rel="noopener">历史演示流程图 <span aria-hidden="true">↗</span></a><a href="assets/market-evidence.txt" target="_blank" rel="noopener">工作流摘录 <span aria-hidden="true">↗</span></a></p>
+  </template>
+  <template id="detail-cost">
+    <section><h3>项目背景</h3><p>各家 AI 模型的定价口径分散，订阅价与按量价难以直接比较。</p></section>
+    <section>
+      <h3>总体架构</h3>
+      <p class="architecture-chain"><span>LiteLLM / OpenRouter + 人工核对订阅价</span> <span class="flow-arrow" aria-hidden="true">→</span> <span>GitHub Actions 每日刷新</span> <span class="flow-arrow" aria-hidden="true">→</span> <span>静态 JSON 价格 API</span> <span class="flow-arrow" aria-hidden="true">→</span> <span>Cloudflare Pages 前端</span></p>
+      <img class="architecture" src="assets/arch-ai-cost.svg" alt="AI 成本账的价格来源、刷新、发布和月成本估算流程" width="464" height="232">
+    </section>
+    <section><h3>关键模块</h3><p>汇总模型调用与订阅价格，按使用量估算月成本，提供横向对比与 3D 城市视图。</p></section>
+    <section><h3>数据更新</h3><p>模型价格由 GitHub Actions 定时同步，订阅价格人工核对。更新结果以静态 JSON 提供给站点。</p></section>
+    <section><h3>项目价值</h3><p>在浏览器比较模型价格、订阅和预估月成本。</p></section>
+    <p class="project-evidence"><strong>在线演示</strong><a href="https://cost.aicorecola.com" target="_blank" rel="noopener">打开 AI 成本账 <span aria-hidden="true">↗</span></a><a href="assets/arch-ai-cost.svg" target="_blank" rel="noopener">查看数据流程图 <span aria-hidden="true">↗</span></a></p>
+  </template>
+  <script src="projects.js"></script>
+</body>
+</html>

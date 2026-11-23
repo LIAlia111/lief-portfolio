@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 464 232" role="img" aria-labelledby="title desc">
+  <title id="title">跨境零售 AI Agent 中台架构</title>
+  <desc id="desc">Web 或 API 经 FastAPI 进入 Orchestrator，按意图选择直路由、ReAct 或多 Agent 编排。LangGraph 编排五个内部业务 Agent，共用 RAG、记忆、生图和 MCP 能力，底层使用 PostgreSQL、Redis 与 Qdrant。</desc>
+  <style>
+    svg { color-scheme: light dark; --bg: #eef2ff; --line: #a9b8e9; --ink: #192a67; --sub: #425387; --arrow: #3a57bc; }
+    @media (prefers-color-scheme: dark) {
+      svg { --bg: #263257; --line: #536ba8; --ink: #edf1ff; --sub: #ccd7f9; --arrow: #b0c3ff; }
+    }
+    rect { fill: var(--bg); stroke: var(--line); }
+    .wire { fill: none; stroke: var(--arrow); stroke-width: 1.6; }
+    .edge { marker-end: url(#arrow); }
+    marker path { fill: var(--arrow); }
+    text { text-anchor: middle; font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", system-ui, sans-serif; fill: var(--ink); font-size: 14px; font-weight: 700; }
+    .note { fill: var(--sub); font-size: 12px; font-weight: 500; }
+  </style>
+  <defs><marker id="arrow" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L6 3 0 6Z"/></marker></defs>
+  <g class="wire">
+    <path class="edge" d="M99 34H117"/>
+    <path class="edge" d="M287 34H305"/>
+    <path d="M380 61V79M51 79H411"/>
+    <path class="edge" d="M51 79V96"/>
+    <path class="edge" d="M141 79V96"/>
+    <path class="edge" d="M231 79V96"/>
+    <path class="edge" d="M321 79V96"/>
+    <path class="edge" d="M411 79V96"/>
+    <path d="M51 139V151H411V139M141 139V151M231 139V151M321 139V151"/>
+    <path class="edge" d="M231 151V164"/>
+    <path class="edge" d="M231 193V201"/>
+  </g>
+  <rect x="10" y="8" width="88" height="52" rx="8"/>
+  <text x="54" y="29">Web / API</text>
+  <text class="note" x="54" y="47">FastAPI</text>
+  <rect x="119" y="8" width="167" height="52" rx="8"/>
+  <text x="202.5" y="24">Orchestrator</text>
+  <text class="note" x="202.5" y="39">意图分级调度</text>
+  <text class="note" x="202.5" y="53">直路由 / ReAct / 多 Agent</text>
+  <rect x="307" y="8" width="147" height="52" rx="8"/>
+  <text x="380.5" y="29">LangGraph 工作流</text>
+  <text class="note" x="380.5" y="47">规划、执行、校验与回跳</text>
+  <rect x="10" y="98" width="82" height="40" rx="8"/>
+  <text x="51" y="115">选品</text>
+  <text x="51" y="131">需求预测</text>
+  <rect x="100" y="98" width="82" height="40" rx="8"/>
+  <text x="141" y="115">Listing</text>
+  <text x="141" y="131">优化</text>
+  <rect x="190" y="98" width="82" height="40" rx="8"/>
+  <text x="231" y="123">多语言客服</text>
+  <rect x="280" y="98" width="82" height="40" rx="8"/>
+  <text x="321" y="115">商品素材</text>
+  <text x="321" y="131">检索与生图</text>
+  <rect x="370" y="98" width="82" height="40" rx="8"/>
+  <text x="411" y="115">评价售后</text>
+  <text x="411" y="131">运营日报</text>
+  <rect x="78" y="166" width="306" height="26" rx="8"/>
+  <text x="231" y="184">RAG / 记忆 / 生图 / MCP 工具</text>
+  <rect x="78" y="203" width="306" height="25" rx="8"/>
+  <text x="231" y="220">PostgreSQL + Redis + Qdrant</text>
+</svg>

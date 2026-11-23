@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 344 402" role="img">
+  <title>AI 知识视频流水线架构图</title>
+  <desc>选题 → 事实核查 → 文案 → 分镜 → 配音 / BGM → 渲染 → 三路评审，画面 / 文案 / 声音 → 发布包 → sau CLI（历史），定时发布至抖音 / 小红书</desc>
+  <style>
+    svg { color-scheme: light dark; --bg: #eef2ff; --line: #a9b8e9; --ink: #192a67; --sub: #425387; --arrow: #3a57bc; }
+    @media (prefers-color-scheme: dark) {
+      svg { --bg: #263257; --line: #536ba8; --ink: #edf1ff; --sub: #ccd7f9; --arrow: #b0c3ff; }
+    }
+    rect { fill: var(--bg); stroke: var(--line); }
+    .edge { fill: none; stroke: var(--arrow); stroke-width: 1.6; marker-end: url(#arrow); }
+    marker path { fill: var(--arrow); }
+    text { text-anchor: middle; font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", system-ui, sans-serif; fill: var(--ink); font-size: 14px; font-weight: 700; }
+    .note { fill: var(--sub); font-size: 12px; font-weight: 500; }
+  </style>
+  <defs><marker id="arrow" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L6 3 0 6Z"/></marker></defs>
+  <path class="edge" d="M 159 33 H 183"/>
+  <path class="edge" d="M 263 63 V 85"/>
+  <path class="edge" d="M 185 117 H 161"/>
+  <path class="edge" d="M 81 147 V 169"/>
+  <path class="edge" d="M 159 201 H 183"/>
+  <path class="edge" d="M 263 231 V 253"/>
+  <path class="edge" d="M 185 285 H 161"/>
+  <path class="edge" d="M 81 315 V 337"/>
+  <g transform="translate(5 5)">
+    <rect width="152" height="56" rx="9"/>
+    <text x="76" y="33">选题</text>
+  </g>
+  <g transform="translate(187 5)">
+    <rect width="152" height="56" rx="9"/>
+    <text x="76" y="33">事实核查</text>
+  </g>
+  <g transform="translate(187 89)">
+    <rect width="152" height="56" rx="9"/>
+    <text x="76" y="33">文案</text>
+  </g>
+  <g transform="translate(5 89)">
+    <rect width="152" height="56" rx="9"/>
+    <text x="76" y="33">分镜</text>
+  </g>
+  <g transform="translate(5 173)">
+    <rect width="152" height="56" rx="9"/>
+    <text x="76" y="33">配音 / BGM</text>
+  </g>
+  <g transform="translate(187 173)">
+    <rect width="152" height="56" rx="9"/>
+    <text x="76" y="33">渲染</text>
+  </g>
+  <g transform="translate(187 257)">
+    <rect width="152" height="56" rx="9"/>
+    <text x="76" y="24">三路评审</text>
+    <text class="note" x="76" y="42">画面 / 文案 / 声音</text>
+  </g>
+  <g transform="translate(5 257)">
+    <rect width="152" height="56" rx="9"/>
+    <text x="76" y="33">发布包</text>
+  </g>
+  <g transform="translate(5 341)">
+    <rect width="152" height="56" rx="9"/>
+    <text x="76" y="24">sau CLI（历史）</text>
+    <text class="note" x="76" y="42">定时发布至抖音 / 小红书</text>
+  </g>
+</svg>

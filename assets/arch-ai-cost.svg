@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 464 232" role="img" aria-labelledby="title desc">
+  <title id="title">AI 成本账价格数据流程</title>
+  <desc id="desc">LiteLLM 与 OpenRouter 提供按量价格，订阅价格由人工核对。GitHub Actions 每日自动刷新。Cloudflare Pages 提供静态 JSON 价格 API，站点支持价格对比、月成本计算与 3D 城市视图。</desc>
+  <style>
+    svg { color-scheme: light dark; --bg: #eaf6f3; --line: #96c6be; --ink: #113f42; --sub: #315b57; --arrow: #2d736c; }
+    @media (prefers-color-scheme: dark) {
+      svg { --bg: #193d3b; --line: #49837c; --ink: #e7fcf7; --sub: #b9e5dc; --arrow: #a4e9db; }
+    }
+    rect { fill: var(--bg); stroke: var(--line); }
+    .wire { fill: none; stroke: var(--arrow); stroke-width: 1.6; }
+    .edge { marker-end: url(#arrow); }
+    marker path { fill: var(--arrow); }
+    text { text-anchor: middle; font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", system-ui, sans-serif; fill: var(--ink); font-size: 16px; font-weight: 700; }
+    .note { fill: var(--sub); font-size: 14px; font-weight: 500; }
+  </style>
+  <defs><marker id="arrow" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L6 3 0 6Z"/></marker></defs>
+  <g class="wire">
+    <path d="M112 65V75H352V65"/>
+    <path class="edge" d="M232 75V90"/>
+    <path class="edge" d="M232 146V157H112V171"/>
+    <path class="edge" d="M213 198H250"/>
+  </g>
+  <rect x="12" y="12" width="200" height="52" rx="9"/>
+  <text x="112" y="34">LiteLLM / OpenRouter</text>
+  <text class="note" x="112" y="52">按量价格源</text>
+  <rect x="252" y="12" width="200" height="52" rx="9"/>
+  <text x="352" y="34">人工核对</text>
+  <text class="note" x="352" y="52">订阅价格</text>
+  <rect x="132" y="92" width="200" height="53" rx="9"/>
+  <text x="232" y="114">GitHub Actions</text>
+  <text class="note" x="232" y="133">每日自动刷新</text>
+  <rect x="12" y="173" width="200" height="50" rx="9"/>
+  <text x="112" y="194">静态 JSON 价格 API</text>
+  <text class="note" x="112" y="212">Cloudflare Pages</text>
+  <rect x="252" y="173" width="200" height="50" rx="9"/>
+  <text x="352" y="194">价格对比 / 月成本</text>
+  <text class="note" x="352" y="212">3D 城市视图</text>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 344 234" role="img">
+  <title>Market Intel Agent架构图</title>
+  <desc>市场 / 竞品问题 → 规划角色，拆分研究任务 → 并行研究，LangGraph · Tavily → 汇总角色，合并研究发现 → 前端展示，FastAPI SSE 回传进度</desc>
+  <style>
+    svg { color-scheme: light dark; --bg: #eef2ff; --line: #a9b8e9; --ink: #192a67; --sub: #425387; --arrow: #3a57bc; }
+    @media (prefers-color-scheme: dark) {
+      svg { --bg: #263257; --line: #536ba8; --ink: #edf1ff; --sub: #ccd7f9; --arrow: #b0c3ff; }
+    }
+    rect { fill: var(--bg); stroke: var(--line); }
+    .edge { fill: none; stroke: var(--arrow); stroke-width: 1.6; marker-end: url(#arrow); }
+    marker path { fill: var(--arrow); }
+    text { text-anchor: middle; font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", system-ui, sans-serif; fill: var(--ink); font-size: 14px; font-weight: 700; }
+    .note { fill: var(--sub); font-size: 12px; font-weight: 500; }
+  </style>
+  <defs><marker id="arrow" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L6 3 0 6Z"/></marker></defs>
+  <path class="edge" d="M 159 33 H 183"/>
+  <path class="edge" d="M 263 63 V 85"/>
+  <path class="edge" d="M 185 117 H 161"/>
+  <path class="edge" d="M 81 147 V 169"/>
+  <g transform="translate(5 5)">
+    <rect width="152" height="56" rx="9"/>
+    <text x="76" y="33">市场 / 竞品问题</text>
+  </g>
+  <g transform="translate(187 5)">
+    <rect width="152" height="56" rx="9"/>
+    <text x="76" y="24">规划角色</text>
+    <text class="note" x="76" y="42">拆分研究任务</text>
+  </g>
+  <g transform="translate(187 89)">
+    <rect width="152" height="56" rx="9"/>
+    <text x="76" y="24">并行研究</text>
+    <text class="note" x="76" y="42">LangGraph · Tavily</text>
+  </g>
+  <g transform="translate(5 89)">
+    <rect width="152" height="56" rx="9"/>
+    <text x="76" y="24">汇总角色</text>
+    <text class="note" x="76" y="42">合并研究发现</text>
+  </g>
+  <g transform="translate(5 173)">
+    <rect width="152" height="56" rx="9"/>
+    <text x="76" y="24">前端展示</text>
+    <text class="note" x="76" y="42">FastAPI SSE 回传进度</text>
+  </g>
+</svg>

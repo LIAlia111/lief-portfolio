@@ -1,0 +1,7 @@
+﻿Market Intel Agent｜工作流摘录
+
+规划：将市场或竞品问题拆成研究任务。
+研究：用 LangGraph 并行执行研究任务，接入 Tavily 搜索。
+汇总：合并发现并给到可读结果。FastAPI SSE 用线程与队列向前端回传过程状态。
+
+出处：Market Intel Agent 项目档案。展示为历史 Demo 的架构摘录。

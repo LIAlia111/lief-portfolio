@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 432 176" role="img" aria-labelledby="title desc">
+  <title id="title">Hybrid RAG 混合检索流程</title>
+  <desc id="desc">改写查询后并行执行向量检索和关键词检索，将结果融合排序、重排，再由 LLM 生成附引用的回答。</desc>
+  <style>
+    svg { color-scheme: light dark; --bg: #eef2ff; --line: #a9b8e9; --ink: #192a67; --arrow: #3a57bc; }
+    @media (prefers-color-scheme: dark) {
+      svg { --bg: #263257; --line: #536ba8; --ink: #edf1ff; --arrow: #b0c3ff; }
+    }
+    rect { fill: var(--bg); stroke: var(--line); }
+    .wire { fill: none; stroke: var(--arrow); stroke-width: 1.6; }
+    .edge { marker-end: url(#arrow); }
+    marker path { fill: var(--arrow); }
+    text { text-anchor: middle; font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", system-ui, sans-serif; fill: var(--ink); font-size: 15px; font-weight: 700; }
+  </style>
+  <defs><marker id="arrow" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L6 3 0 6Z"/></marker></defs>
+  <g class="wire">
+    <path d="M119 59H133"/>
+    <path class="edge" d="M133 59V27H159"/>
+    <path class="edge" d="M133 59V91H159"/>
+    <path d="M271 27H292V91H271"/>
+    <path class="edge" d="M292 59H311"/>
+    <path class="edge" d="M367 80V121"/>
+    <path class="edge" d="M312 145H121"/>
+  </g>
+  <rect x="10" y="38" width="108" height="42" rx="8"/>
+  <text x="64" y="65">查询改写</text>
+  <rect x="161" y="7" width="108" height="40" rx="8"/>
+  <text x="215" y="33">向量检索</text>
+  <rect x="161" y="71" width="108" height="40" rx="8"/>
+  <text x="215" y="97">关键词检索</text>
+  <rect x="313" y="38" width="108" height="42" rx="8"/>
+  <text x="367" y="65">融合排序</text>
+  <rect x="313" y="123" width="108" height="44" rx="8"/>
+  <text x="367" y="151">重排</text>
+  <rect x="10" y="123" width="108" height="44" rx="8"/>
+  <text x="64" y="151">LLM + 引用</text>
+</svg>
