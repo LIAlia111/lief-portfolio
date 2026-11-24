@@ -43,7 +43,7 @@
         </aside>
       </div>
       <nav class="section-nav" id="section-nav" aria-label="简历章节">
-        <ol><li><a href="#profile"><span>01</span> 职业概述</a></li><li><a href="#mission"><span>✦</span> 我在做的事</a></li><li><a href="#capabilities"><span>02</span> 核心能力</a></li><li><a href="#experience"><span>03</span> 工作经历</a></li><li><a href="#projects"><span>04</span> 项目经历</a></li><li><a href="#method"><span>05</span> 我的方法论</a></li><li><a href="#more"><span>06</span> 开源与作品</a></li><li><a href="#skills"><span>07</span> 专业技能</a></li><li><a href="#education"><span>08</span> 教育背景</a></li><li><a href="#contact"><span>09</span> 联系方式</a></li><li><a href="#faq"><span>10</span> 常见问题</a></li></ol>
+        <ol><li><a href="#profile"><span>01</span> 职业概述</a></li><li><a href="#mission"><span>✦</span> 我在做的事</a></li><li><a href="#capabilities"><span>02</span> 核心能力</a></li><li><a href="#experience"><span>03</span> 工作经历</a></li><li><a href="#projects"><span>04</span> 项目经历</a></li><li><a href="#method"><span>05</span> 我的方法论</a></li><li><a href="#more"><span>06</span> 开源与作品</a></li><li><a href="#skills"><span>07</span> 专业技能</a></li><li><a href="#education"><span>08</span> 教育背景</a></li><li><a href="#contact"><span>09</span> 联系方式</a></li></ol>
       </nav>
     </section>
 
@@ -273,7 +273,7 @@
         <article><h3>先定接口和验收</h3><p>用规格写明输入、输出、权限和失败行为，拆阶段交给 Claude Code 与 Codex 实现，再逐项联调。</p><a href="https://github.com/LIAlia111/lief-ai-standards">查看编码规范 <span aria-hidden="true">↗</span></a></article>
         <article><h3>按任务复杂度路由</h3><p>简单意图直达工具，中等任务由 ReAct 处理，跨模块任务由 LangGraph 管理状态、重试和回跳。</p><a href="#retail">查看中台架构 <span aria-hidden="true">↗</span></a></article>
         <article><h3>跟踪失败样例</h3><p>用规则校验结构和合规要求，再用 LLM-as-Judge 检查内容。失败样例回流改规则和补测。</p><a href="#retail">查看中台评测 <span aria-hidden="true">↗</span></a></article>
-        <article><h3>操作前确认，交付后核对</h3><p>高风险操作由 Hook 或业务流程暂停确认。上传成果逐条检查目标系统回执与页面。</p><a href="assets/papers-evidence.txt">查看验收摘录 <span aria-hidden="true">↗</span></a></article>
+        <article><h3>操作前确认，交付后核对</h3><p>高风险操作由 Hook 或业务流程暂停确认。上传成果逐条检查目标系统回执与页面。</p></article>
       </div>
     </section>
 
@@ -284,7 +284,7 @@
         <a class="demo" id="agent-flow-visualizer" href="https://github.com/LIAlia111/agent-flow-visualizer" target="_blank" rel="noopener"><div class="demo-body"><span class="demo-kind">开源</span><h3>agent-flow-visualizer</h3><p>用 SVG 和 Canvas 在浏览器里交互查看 Agent 工作流。</p><span class="demo-action">浏览 GitHub <span aria-hidden="true">↗</span></span></div></a>
         <a class="demo" id="lief-ai-standards" href="https://github.com/LIAlia111/lief-ai-standards" target="_blank" rel="noopener"><div class="demo-body"><span class="demo-kind">开源</span><h3>lief-ai-standards</h3><p>AI 编码规范库，包含 AGENTS.md、CLAUDE.md 模板与提示词。</p><span class="demo-action">浏览 GitHub <span aria-hidden="true">↗</span></span></div></a>
         <a class="demo demo-image" id="video" href="assets/arch-video.svg"><div class="demo-thumb"><img src="assets/ai-video.jpg" loading="lazy" width="1280" height="720" alt="《子代理》成片静帧"></div><div class="demo-body"><span class="demo-kind">流程图</span><h3>AI 知识视频流水线</h3><p>从选题核查到文案、渲染、三路评审和发布包，归档 54 期正式成片。</p><span class="demo-action">查看流水线 <span aria-hidden="true">↗</span></span></div></a>
-        <a class="demo" id="papers" href="assets/arch-papers.svg"><div class="demo-body"><span class="demo-kind">流程图</span><h3>论文知识库</h3><p>将首批 11 篇论文整理为通俗解读和 CLI 实操手册，再合并入飞书。</p><span class="demo-action">查看入库流程 <span aria-hidden="true">↗</span></span></div></a>
+
         <a class="demo" id="gallery" href="assets/arch-gallery.svg"><div class="demo-body"><span class="demo-kind">流程图</span><h3>飞书图库 Agent</h3><p>按风格与配色查图，多模态重排和去重后在飞书回图。</p><span class="demo-action">查看检索流程 <span aria-hidden="true">↗</span></span></div></a>
         <a class="demo" id="bitcoin-war" href="https://war.aicorecola.com" target="_blank" rel="noopener"><div class="demo-body"><span class="demo-kind">在线</span><h3>比特币攻城战</h3><p>比特币实时数据可视化网页（Cloudflare Pages + D1）。</p><span class="demo-action">打开作品 <span aria-hidden="true">↗</span></span></div></a>
       </div>
@@ -307,17 +307,6 @@
     <section id="contact" class="wrap section contact" aria-labelledby="contact-title">
       <header class="section-head"><h2 id="contact-title"><span class="section-number" aria-hidden="true">09</span>联系方式</h2></header>
       <div class="contact-links"><a href="mailto:wendongliao76@gmail.com">wendongliao76@gmail.com <span aria-hidden="true">↗</span></a><a href="https://github.com/LIAlia111" target="_blank" rel="noopener">GitHub · LIAlia111 <span aria-hidden="true">↗</span></a></div>
-    </section>
-
-    <section id="faq" class="wrap section" aria-labelledby="faq-title">
-      <header class="section-head"><h2 id="faq-title"><span class="section-number" aria-hidden="true">10</span>常见问题</h2></header>
-      <div class="faq-list">
-        <details open><summary>没有科班计算机背景，代码是谁写的？</summary><p>项目代码主要由 Claude Code 和 Codex 根据规格生成。我负责拆需求、定数据流和接口、审查改动、跑验收，并能讲清各模块的输入、输出和失败时的行为。</p></details>
-        <details><summary>怎么判断 AI 写的实现能交付？</summary><p>把关键路径和失败场景写成接口测试样例，审查关键代码。对生成内容先做规则校验，再用 LLM-as-Judge 检查。退款或批量导出留给人工确认。</p></details>
-        <details><summary>最值得现场演示的项目是哪个？</summary><p>Lief.code：现场派一个任务给 Codex，看它交付、看代码差异、打回返工、再验收——一个人指挥一支 AI 工程队的完整闭环。也可以演示开源工具 claude-familiar 的安装与 Hook 联动。</p></details>
-        <details><summary>能为企业团队做什么？</summary><p>我可以把分散的业务工具接入 Agent 中台，按任务复杂度调度，提供有引用的知识问答，并把权限、评测和运行监控纳入上线流程。</p></details>
-        <details><summary>怎样减少 RAG 回答出错？</summary><p>先过滤用户无权访问的知识源，再用向量和关键词并行召回、融合重排。检查答案是否能回到原文，失败样例用于补充检索和评测。</p></details>
-      </div>
     </section>
   </main>
   <dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title">
@@ -390,7 +379,7 @@
     </section>
     <section><h3>关键模块</h3><p>Hook 在提示词提交时召回相关背景，在高危操作执行前要求确认。Skill 复用操作流程，MCP 接入工具，子代理分工处理任务。服务端用 Qdrant 混合检索和时序知识图谱，本地用文件记忆。Claude 定规格与验收，Codex 批量执行。</p></section>
     <section><h3>质量与测试</h3><p>执行后触发 LLM-as-Judge 评估，失败案例经根因分析写成防御规则。卡片的 Hook、Skill 和定时脚本数来自历史服务器备份的顶层统计。</p></section>
-    <section><h3>项目价值</h3><p>支撑 AI 知识视频和论文知识库的批量交付。延伸作品「贾维斯指挥台」正在开发，用 Electron 将 Claude Code、Codex 与 Grok 放进同一窗口并排对话、按目录分派任务、查看 Git 变更与验收结果。</p></section>
+    <section><h3>项目价值</h3><p>支撑 AI 知识视频的批量交付。延伸作品「贾维斯指挥台」正在开发，用 Electron 将 Claude Code、Codex 与 Grok 放进同一窗口并排对话、按目录分派任务、查看 Git 变更与验收结果。</p></section>
     <p class="project-evidence"><strong>证据</strong><a href="assets/jarvis-evidence.txt" target="_blank" rel="noopener">架构与交接摘录 <span aria-hidden="true">↗</span></a><a href="assets/arch-jarvis.svg" target="_blank" rel="noopener">架构示意图 <span aria-hidden="true">↗</span></a></p>
   </template>
   <template id="detail-askbase">
