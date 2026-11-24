@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 344 318" role="img">
-  <title>Lief.code 架构图</title>
-  <desc>Claude Code / Codex / Grok → 各自 adapter → 统一事件流 → 并排对话与任务看板 → Git 差异验收 → 验收或打回（带上下文返工）</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="344" height="318" viewBox="0 0 344 318" role="img" aria-labelledby="title desc">
+  <title id="title">Lief.code 架构图</title>
+  <desc id="desc">Windows 桌面端或本地 Web 接入本地 Node 服务。服务使用事件溯源编排、SQLite、Git 检查点和 MCP，并连接各家 Agent CLI，支持差异审阅、权限审批与 Git 回退。</desc>
   <style>
     svg { color-scheme: light dark; --bg: #eef2ff; --line: #a9b8e9; --ink: #192a67; --sub: #425387; --arrow: #3a57bc; }
     @media (prefers-color-scheme: dark) {
@@ -8,52 +8,32 @@
     }
     rect { fill: var(--bg); stroke: var(--line); }
     .edge { fill: none; stroke: var(--arrow); stroke-width: 1.6; marker-end: url(#arrow); }
-    .back { fill: none; stroke: var(--arrow); stroke-width: 1.4; stroke-dasharray: 4 3; marker-end: url(#arrow); }
     marker path { fill: var(--arrow); }
     text { text-anchor: middle; font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", system-ui, sans-serif; fill: var(--ink); font-size: 14px; font-weight: 700; }
     .note { fill: var(--sub); font-size: 12px; font-weight: 500; }
   </style>
   <defs><marker id="arrow" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L6 3 0 6Z"/></marker></defs>
-  <path class="edge" d="M 159 33 H 183"/>
-  <path class="edge" d="M 263 63 V 85"/>
-  <path class="edge" d="M 185 117 H 161"/>
-  <path class="edge" d="M 81 147 V 169"/>
-  <path class="edge" d="M 159 201 H 183"/>
-  <path class="edge" d="M 263 231 V 253"/>
-  <path class="back" d="M 185 285 H 40 V 233"/>
-  <g transform="translate(5 5)">
-    <rect width="152" height="56" rx="9"/>
-    <text x="76" y="24">3 家编程 Agent</text>
-    <text class="note" x="76" y="42">Claude Code · Codex · Grok</text>
+  <path class="edge" d="M 172 56 V 73"/>
+  <path class="edge" d="M 172 145 V 162"/>
+  <path class="edge" d="M 172 234 V 251"/>
+  <g transform="translate(21 8)">
+    <rect width="302" height="46" rx="9"/>
+    <text x="151" y="28">Windows 桌面端 / 本地 Web</text>
   </g>
-  <g transform="translate(187 5)">
-    <rect width="152" height="56" rx="9"/>
-    <text x="76" y="24">各自 adapter</text>
-    <text class="note" x="76" y="42">逐行解析流式输出</text>
+  <g transform="translate(21 77)">
+    <rect width="302" height="66" rx="9"/>
+    <text x="151" y="21">本地 Node 服务</text>
+    <text class="note" x="151" y="39">事件溯源编排 · SQLite</text>
+    <text class="note" x="151" y="55">Git 检查点 · MCP</text>
   </g>
-  <g transform="translate(187 89)">
-    <rect width="152" height="56" rx="9"/>
-    <text x="76" y="24">统一事件流</text>
-    <text class="note" x="76" y="42">文本 · 工具 · 状态 · 错误</text>
+  <g transform="translate(21 166)">
+    <rect width="302" height="66" rx="9"/>
+    <text x="151" y="21">各家 Agent CLI</text>
+    <text class="note" x="151" y="39">Codex · Claude Code · Cursor · Grok · OpenCode</text>
+    <text class="note" x="151" y="55">Antigravity · Kiro · Pi · Muse Code · fx</text>
   </g>
-  <g transform="translate(5 89)">
-    <rect width="152" height="56" rx="9"/>
-    <text x="76" y="24">指挥台</text>
-    <text class="note" x="76" y="42">并排对话 · 任务看板</text>
-  </g>
-  <g transform="translate(5 173)">
-    <rect width="152" height="56" rx="9"/>
-    <text x="76" y="24">派活执行</text>
-    <text class="note" x="76" y="42">按工作目录 · 可停止</text>
-  </g>
-  <g transform="translate(187 173)">
-    <rect width="152" height="56" rx="9"/>
-    <text x="76" y="24">Git 差异验收</text>
-    <text class="note" x="76" y="42">status + diff</text>
-  </g>
-  <g transform="translate(187 257)">
-    <rect width="152" height="56" rx="9"/>
-    <text x="76" y="24">人：验收 / 打回</text>
-    <text class="note" x="76" y="42">打回带上下文返工</text>
+  <g transform="translate(21 255)">
+    <rect width="302" height="54" rx="9"/>
+    <text x="151" y="32">差异审阅 / 权限审批 / Git 回退</text>
   </g>
 </svg>
